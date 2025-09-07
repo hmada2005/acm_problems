@@ -99,6 +99,37 @@ public:
 		}
 		return result;
 	}
+
+	int largest()
+	{
+		int larg = arr[index];
+
+		for (int i = 0; i < size(); i++)
+		{
+			if (arr[i] > larg);
+			{
+				larg = arr[i];
+			}
+		}
+
+		return larg;
+	}
+
+	int smallest()
+	{
+
+		int small = arr[index];
+
+		for (int i = 0; i < size(); i++)
+		{
+			if (arr[i] < small)
+			{
+
+				small = arr[i];
+			}
+		}
+		return small;
+	}
 private :
 
 	int arr[1000];
@@ -120,8 +151,12 @@ int main()
 		cout << list.read(i) << endl;
 	}
 
-	cout << list.size();
-	cout << list.sum();
+	cout << list.size() << endl;
+	cout << list.sum() << endl; 
+
+	cout << list.largest() << endl;
+
+	cout << list.smallest() << endl;
 
 
 }
